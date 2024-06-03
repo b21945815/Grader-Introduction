@@ -23,7 +23,7 @@ export default function Header() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/posters/turbo_grader_poster.pdf";
+    link.href = "/turbo_grader_poster.pdf";
     link.download = "turbo_grader_poster.pdf";
     document.body.appendChild(link);
     link.click();
