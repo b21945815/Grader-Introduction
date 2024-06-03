@@ -30,7 +30,6 @@ export default function Header() {
     document.body.removeChild(link);
   };
 
-
   const getMenuKeyFromPath = (path) => {
     switch (path) {
       case "/whatis":
@@ -101,8 +100,10 @@ export default function Header() {
               </Link>
             </Menu.Item>
             <Menu.Item key="4">
-              <button className="" onClick={handleDownload}>
-                Download Poster
+              <button onClick={handleDownload}>
+                <div className="text-grey-800 dark:text-grey-700-dark">
+                  Download Poster
+                </div>
               </button>
             </Menu.Item>
           </Menu>
