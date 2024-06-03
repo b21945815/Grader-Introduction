@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./WhatIsTurBoPage.css";
+import "./WhatIsTurboPage.css";
 import Header from "../ui/Header";
 
 export default function WhatIsTurboPage() {
