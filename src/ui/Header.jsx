@@ -68,7 +68,7 @@ export default function Header() {
             alignItems: "flex-start",
             justifyContent: "space-between",
             padding: "0 24px",
-            minHeight: "150px",
+            minHeight: "180px",
           }}
         >
           <Menu
@@ -76,6 +76,7 @@ export default function Header() {
             defaultSelectedKeys={selectedKey}
             style={{
               backgroundColor: `${isDarkMode ? "#18212f" : "#ffffffff"}`,
+              width: "40%",
             }}
           >
             <Menu.Item key="1">

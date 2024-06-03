@@ -18,7 +18,7 @@ export default function WhatIsTurboPage() {
 
   return (
     <div className="turbo-grader-container">
-      {<Header />}
+      <Header />
       <div className="content-container">
         <div className="text-section">
           <h1 className="pixelated-text">
@@ -32,13 +32,29 @@ export default function WhatIsTurboPage() {
           </h1>
           <iframe
             width="100%"
-            height="50%"
-            src="https://www.youtube.com/embed/Sy5IR-zk8UA"
+            height="100%"
+            src="https://www.youtube.com/embed/2Wq2eYeoCcU"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
+        </div>
+      </div>
+      <div className="about-section">
+        <h1 className="about-section-title">
+          About Tur<span className="blue-text">Bo</span>Grader
+        </h1>
+        <div className="blue-text-container">
+          <p>
+            TurBo Grader is a pioneering tool aimed at revolutionizing automated grading for coding assignments. It addresses inefficiencies and biases in manual grading, ensuring fairness and consistency.
+          </p>
+          <p>
+            Initially a single-assignment grader, TurBo Grader now supports multiple assignments across diverse courses. It has transitioned to React for a user-friendly interface and revamped its back-end for better security.
+          </p>
+          <p>
+            Future enhancements include in-system quizzes, comprehensive statistical analyses, and an integrated notification system, making TurBo Grader a comprehensive educational tool.
+          </p>
         </div>
       </div>
     </div>

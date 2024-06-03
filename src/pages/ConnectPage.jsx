@@ -1,27 +1,56 @@
-import ConnectBG from "../assets/ConnectBG.png";
-import Header from "../ui/Header";
+import React from 'react';
+import ConnectBG from '../assets/ConnectBG.png';
+import Header from '../ui/Header';
+import DeveloperCard from '../ui/DeveloperCard';
+import zubeyde from '../assets/zubeyde.jpg';
+import fatih from '../assets/fatih.jpeg';
+import furkan from '../assets/furkan.jpeg';
 
 const ConnectPage = () => {
   return (
     <div
       className="dark:bg-grey-0-dark"
       style={{
-        backgroundImage: `url(${ConnectBG})`, // Using the imported image as the background
-        backgroundSize: "cover", // Ensures the background covers the full view
-        backgroundRepeat: "no-repeat", // Makes sure the image does not repeat
-        backgroundPosition: "center", // Centers the background image
+        backgroundImage: `url(${ConnectBG})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
       }}
     >
-      {<Header />}
+      <Header />
       <div
         style={{
-          display: "flex", // Enables flexbox
-          justifyContent: "center", // Centers children horizontally
-          alignItems: "start", // Aligns children at the top of their container
-          height: "100vh", // Makes the container full height
-          padding: "20px", // Provides some spacing around
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'start',
+          height: '100vh',
+          padding: '20px',
+          paddingTop: '40px', // Added padding top for the container
+          flexWrap: 'wrap', // Allows cards to wrap to the next line if necessary
         }}
-      ></div>
+      >
+        <DeveloperCard
+          name="Zübeyde Civelek"
+          role="Developer"
+          linkedIn="https://www.linkedin.com/in/z%C3%BCbeyde-civelek-b2a403196/"
+          github="https://github.com/zubeydecivelek"
+          image={zubeyde}
+        />
+        <DeveloperCard
+          name="Fatih Ay"
+          role="Developer"
+          linkedIn="https://www.linkedin.com/in/fatihay61/"
+          github="https://github.com/b21945815"
+          image={fatih}
+        />
+        <DeveloperCard
+          name="Furkan Aydın"
+          role="Developer"
+          linkedIn="https://www.linkedin.com/in/furkan-ayd%C4%B1n-a9223523a/"
+          github="https://github.com/b2200356069"
+          image={furkan}
+        />
+      </div>
     </div>
   );
 };
