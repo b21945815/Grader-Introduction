@@ -1,10 +1,10 @@
 import { ConfigProvider, Layout, Menu } from "antd";
 import { Link, useLocation } from "react-router-dom";
 import HeaderBG from "../assets/HeaderBG.png";
+import HeaderDarkBG from "../assets/HeaderDarkBG.png";
 import Loader from "../ui/Loader";
 import useDarkMode from "../hooks/useDarkMode";
 import HeaderMenu from "./HeaderMenu";
-
 const { Header: AntHeader } = Layout;
 
 export default function Header() {
@@ -59,7 +59,7 @@ export default function Header() {
       >
         <AntHeader
           style={{
-            backgroundImage: `url(${HeaderBG})`,
+            backgroundImage: `${isDarkMode ? `url(${HeaderDarkBG})` : `url(${HeaderBG})`}`,
             backgroundColor: `${isDarkMode ? "#18212f" : "#ffffffff"}`,
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -107,7 +107,7 @@ export default function Header() {
                 </div>
               </button>
             </Menu.Item>
-            <Menu.Item key="4">
+            <Menu.Item key="5">
               <a
                 href="https://test-grader.cs.hacettepe.edu.tr"
                 target="_blank"

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Faq from "react-faq-component";
 import useDarkMode from "../hooks/useDarkMode";
 import Header from "../ui/Header";
+import Loader from "../ui/Loader";
 
 const data = {
   title: "Frequently Asked Questions",
@@ -74,8 +75,7 @@ const config = {
 
 export default function FAQPage() {
   const { isDarkMode, isDarkModeLoading } = useDarkMode();
-
-  useEffect;
+  if (isDarkModeLoading) return <Loader />;
   return (
     <div className="h-full w-full bg-grey-0 dark:bg-grey-100-dark">
       {<Header />}
