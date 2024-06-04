@@ -36,7 +36,7 @@ const data = {
     {
       title: "Can users suggest features for future updates?",
       content: (
-        <span className="bg-grey-0 dark:bg-grey-100-dark">
+        <span className="bg-grey-0 dark:bg-grey-0-dark">
           Yes, we love hearing from our users! If you have ideas for new
           features, you can tell us through our
           <Link to="/connect" style={{ color: "#DB2229" }}>
@@ -50,7 +50,7 @@ const data = {
     {
       title: "How can I get technical support for TurBoGrader?",
       content: (
-        <span className="bg-grey-0 dark:bg-grey-100-dark">
+        <span className="bg-grey-0 dark:bg-grey-0-dark">
           If you need help with TurBoGrader, please send us a message through
           our
           <Link to="/connect" style={{ color: "#DB2229" }}>
@@ -77,7 +77,7 @@ export default function FAQPage() {
   const { isDarkMode, isDarkModeLoading } = useDarkMode();
   if (isDarkModeLoading) return <Loader />;
   return (
-    <div className="h-full w-full bg-grey-0 dark:bg-grey-100-dark">
+    <div className="h-full w-full bg-grey-0 dark:bg-grey-0-dark">
       {<Header />}
 
       <div
@@ -90,7 +90,7 @@ export default function FAQPage() {
           height: "100%",
           padding: "70px",
         }}
-        className="bg-grey-0 dark:bg-grey-100-dark"
+        className="bg-grey-0 dark:bg-grey-0-dark"
       >
         <Faq
           data={data}
