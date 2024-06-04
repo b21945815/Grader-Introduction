@@ -107,6 +107,16 @@ export default function Header() {
                 </div>
               </button>
             </Menu.Item>
+            <Menu.Item key="4">
+              <a
+                className="text-grey-800 dark:text-grey-700-dark"
+                href="https://test-grader.cs.hacettepe.edu.tr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TurBo Grader
+              </a>
+            </Menu.Item>
           </Menu>
           <div
             style={{

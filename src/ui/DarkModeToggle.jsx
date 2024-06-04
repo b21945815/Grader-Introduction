@@ -9,7 +9,7 @@ export default function DarkModeToggle({ size }) {
       {isDarkMode ? (
         <FontAwesomeIcon
           icon={faSun}
-          color="#0b66ac"
+          color="#f8fe01"
           size={size ? size : "sm"}
         />
       ) : (
