@@ -11,7 +11,7 @@ const data = {
     {
       title: "What is TurBoGrader?",
       content:
-        "TurBoGrader is a tool that automatically grades coding assignments. It’s designed to make grading faster and more accurate, helping both teachers and students in schools and colleges.",
+        "TurBoGrader is a tool that automatically grades coding assignments. It's designed to make grading faster and more accurate, helping both teachers and students in schools and colleges.",
     },
     {
       title: "Who can benefit from using TurBoGrader?",
@@ -21,7 +21,7 @@ const data = {
     {
       title: "How does TurBoGrader improve the grading process?",
       content:
-        "TurBoGrader makes grading automatic, which means it’s quicker and less likely to make mistakes than humans. It can handle many assignments at the same time and gives detailed feedback to help students learn.",
+        "TurBoGrader makes grading automatic, which means it's quicker and less likely to make mistakes than humans. It can handle many assignments at the same time and gives detailed feedback to help students learn.",
     },
     {
       title: "How secure is the data entered into TurBoGrader?",
