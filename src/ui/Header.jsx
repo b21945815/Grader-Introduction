@@ -76,7 +76,7 @@ export default function Header() {
             defaultSelectedKeys={selectedKey}
             style={{
               backgroundColor: `${isDarkMode ? "#18212f" : "#ffffffff"}`,
-              width: "40%",
+              width: "60%",
             }}
           >
             <Menu.Item key="1">
