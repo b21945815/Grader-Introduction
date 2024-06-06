@@ -114,7 +114,7 @@ export default function Header() {
                 rel="noopener noreferrer"
               >
                 <div className="text-grey-800 dark:text-grey-700-dark">
-                  TurBo Grader
+                  TurBo Grader(End of First Term Version)
                 </div>
               </a>
             </Menu.Item>
